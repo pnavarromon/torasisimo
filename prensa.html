@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,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">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prensa — Torasísimo</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+<style>
+*{ margin:0; padding:0; box-sizing:border-box; }
+:root{
+  --black:#111111; --white:#ffffff; --grey-light:#f1f1f1;
+  --grey-mid:#e5e5e5; --accent:#1abc9c; --text-muted:#555;
+}
+body{ font-family:'Lato',sans-serif; font-weight:300; color:var(--black); overflow-x:hidden; }
+
+/* HEADER */
+header{ display:flex; justify-content:space-between; align-items:center; padding:18px 48px; border-bottom:1px solid var(--grey-mid); position:sticky; top:0; background:var(--white); z-index:100; }
+.logo{ display:flex; align-items:center; gap:12px; }
+.logo img{ height:48px; width:auto; }
+.logo-text{ display:flex; flex-direction:column; line-height:1.2; }
+.logo-text strong{ font-family:'Oswald',sans-serif; font-size:15px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; }
+.logo-text span{ font-family:'Lato',sans-serif; font-size:10px; font-weight:300; letter-spacing:0.2em; text-transform:uppercase; color:var(--text-muted); }
+nav{ display:flex; align-items:center; gap:36px; }
+nav a{ text-decoration:none; color:var(--black); font-size:13px; letter-spacing:0.08em; text-transform:uppercase; font-weight:400; position:relative; padding-bottom:2px; transition:color 0.2s; }
+nav a::after{ content:""; position:absolute; bottom:0; left:0; width:0; height:1px; background:var(--accent); transition:width 0.25s ease; }
+nav a:hover::after{ width:100%; }
+nav a.active{ border-bottom:1px solid var(--accent); }
+
+/* HAMBURGER */
+.hamburger{ display:none; flex-direction:column; gap:5px; cursor:pointer; padding:4px; background:none; border:none; z-index:200; }
+.hamburger span{ display:block; width:24px; height:2px; background:var(--black); transition:all 0.3s ease; transform-origin:center; }
+.hamburger.open span:nth-child(1){ transform:translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2){ opacity:0; }
+.hamburger.open span:nth-child(3){ transform:translateY(-7px) rotate(-45deg); }
+.nav-mobile{ display:none; position:fixed; top:0; left:0; width:100%; height:100vh; background:var(--white); z-index:150; flex-direction:column; justify-content:center; align-items:center; gap:40px; opacity:0; pointer-events:none; transition:opacity 0.3s ease; }
+.nav-mobile.open{ opacity:1; pointer-events:all; }
+.nav-mobile a{ font-family:'Oswald',sans-serif; font-size:32px; font-weight:600; text-decoration:none; color:var(--black); letter-spacing:0.05em; text-transform:uppercase; transition:color 0.2s; }
+.nav-mobile a:hover, .nav-mobile a.active{ color:var(--accent); }
+
+/* TITULO */
+.titulo-pagina{
+  padding: 56px 48px 40px;
+  border-bottom: 1px solid var(--grey-mid);
+  overflow: hidden;
+  animation: fadeUp 0.8s ease both;
+}
+@keyframes fadeUp{ from{ opacity:0; transform:translateY(14px); } to{ opacity:1; transform:translateY(0); } }
+.titulo-pagina .label{ display:block; font-size:11px; font-weight:400; letter-spacing:0.25em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
+.titulo-pagina h1{ font-family:'Oswald',sans-serif; font-size:clamp(64px,10vw,140px); font-weight:700; line-height:0.88; letter-spacing:-0.02em; text-transform:uppercase; }
+.titulo-pagina .linea{ display:block; width:100%; height:1px; background:var(--black); margin-top:28px; transform:scaleX(0); transform-origin:left; animation:lineIn 0.9s 0.3s ease forwards; }
+@keyframes lineIn{ to{ transform:scaleX(1); } }
+
+/* INTRO */
+.prensa-intro{
+  padding: 56px 48px 48px;
+  border-bottom: 1px solid var(--grey-mid);
+  max-width: 720px;
+}
+.prensa-intro p{
+  font-size: 18px;
+  line-height: 1.75;
+  color: #333;
+}
+
+/* GRID NOTICIAS */
+.noticias-section{ padding: 64px 48px; }
+.noticias-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--grey-mid);
+  border: 1px solid var(--grey-mid);
+}
+
+.noticia-card{
+  background: var(--white);
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: background 0.2s;
+}
+.noticia-card:hover{ background: var(--grey-light); }
+
+.noticia-header{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.noticia-tipo{
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 2px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.noticia-fecha{
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.noticia-medio{
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--black);
+}
+
+.noticia-desc{
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--text-muted);
+  flex: 1;
+}
+
+.noticia-link{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--black);
+  text-decoration: none;
+  border-bottom: 1px solid var(--black);
+  padding-bottom: 2px;
+  width: fit-content;
+  transition: color 0.2s, border-color 0.2s;
+}
+.noticia-link:hover{ color: var(--accent); border-color: var(--accent); }
+
+.noticia-sin-enlace{
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #bbb;
+}
+
+/* FOOTER */
+footer{ background:var(--black); color:var(--white); padding:64px 48px 0; }
+.footer-inner{ display:grid; grid-template-columns:2fr 1fr 1fr; gap:60px; padding-bottom:48px; border-bottom:1px solid rgba(255,255,255,0.1); }
+.footer-brand{ display:flex; flex-direction:column; gap:12px; }
+.footer-brand img{ height:44px; width:auto; filter:brightness(0) invert(1); opacity:0.9; }
+.footer-logo-text{ display:flex; flex-direction:column; line-height:1.2; }
+.footer-logo-text strong{ font-family:'Oswald',sans-serif; font-size:15px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--white); }
+.footer-logo-text span{ font-size:10px; font-weight:300; letter-spacing:0.2em; text-transform:uppercase; color:rgba(255,255,255,0.4); }
+.footer-tagline{ font-size:13px; line-height:1.7; color:rgba(255,255,255,0.5); max-width:280px; margin-top:4px; }
+.footer-heading{ font-family:'Oswald',sans-serif; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); margin-bottom:20px; }
+.footer-links{ display:flex; flex-direction:column; }
+.footer-links a{ text-decoration:none; color:rgba(255,255,255,0.6); font-size:13px; padding:6px 0; border-bottom:1px solid rgba(255,255,255,0.06); transition:color 0.2s; letter-spacing:0.02em; }
+.footer-links a:hover{ color:var(--white); }
+.social-links{ display:flex; flex-direction:column; gap:12px; }
+.social-btn{ display:inline-flex; align-items:center; gap:10px; text-decoration:none; color:rgba(255,255,255,0.6); font-size:13px; transition:color 0.2s; letter-spacing:0.02em; }
+.social-btn:hover{ color:var(--accent); }
+.footer-bottom{ padding:20px 0; display:flex; justify-content:space-between; align-items:center; }
+.footer-bottom p{ font-size:11px; color:rgba(255,255,255,0.3); letter-spacing:0.05em; }
+.footer-bottom a{ color:rgba(255,255,255,0.3); text-decoration:none; transition:color 0.2s; }
+.footer-bottom a:hover{ color:rgba(255,255,255,0.7); }
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  header{ padding:16px 24px; }
+  nav{ display:none; }
+  .hamburger{ display:flex; }
+  .nav-mobile{ display:flex; }
+  .titulo-pagina{ padding:40px 24px 32px; }
+  .prensa-intro{ padding:40px 24px; }
+  .noticias-section{ padding:40px 24px; }
+  .noticias-grid{ grid-template-columns:1fr; }
+  footer{ padding:48px 24px 0; }
+  .footer-inner{ grid-template-columns:1fr; gap:36px; }
+  .footer-bottom{ flex-direction:column; gap:8px; text-align:center; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGFiMzAxMDAwMGZhMDIwMDAwNjkwNDAwMDBhYzA0MDAwMDA2MDUwMDAwMzEwNzAwMDA0MjBhMDAwMDljMGEwMDAwMDgwYjAwMDA2OTBiMDAwMGI1MGUwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAH4AAQACAwEBAAAAAAAAAAAAAAAFBwECBAMGEAABAwEEBAgMBgMAAAAAAAABAAIRAwQSITEgIkFRBRMyUmFxkbEQFDAzQGBygaHB0eEVQmKCkvBTovERAQABAwIEBgIDAQAAAAAAAAERACExQVFhcYGhECCRsdHwweEwQPFg/9oADAMBAAIAAwAAAAG5QAAAAAAAAKauWmi5QAAAAAAAAKauWmi5QEXG65+mhObg129equvpvPew0D4evn9K4m2vr0V5YeuxFxucfTPL12wpq5aaLlBxV1aVaeHr9R8NZteZx8PNcU9nPfIx3v4+m85v8ztpH2bXf0DPzkxIQWM2D1/KfV9Hgpq5aa2xcoHzn0cZrns4/TQ+N+q999NomV8fbbEfrLeGHbAy/nnEdxT3ZjbXoN9FNXLTWVygR0jHYRndybabeUj6RucazMNvjOJb2g84d8dIs+e+noxJDfCmrlpouUCJlmELtMMZisS3ORXT0iN6ev1OHSVZxE9fWAyU1ctNFygAARcow+V9/o2uflu6bAb4AAU1ctNFygAAAAAAAAU1ctNFyqaFyqaFyqaFyqaFyqaFyqaFyqaFyqaFyqaFy00H/9oACAEBAAEFAvVGvaCxeOm9RtTnaJqNB8hXtLaS/EWIcIMKt9VpWqrDUZTNS2sYfxFipV21FX5FI0byrWplJDhFia4OGhUoNqK1MDH0LLTLeFaLqlUUAG2Gzup1bZ515ocXYJ4zhGpDX0y1WepfZW85es71Sa1rdG3eds/m+Ei9tbXixue6tbPO2iz3G8HOBba38ZUquqOHBtRVX0KrrRQbTXBpN3RrWLjHU23RaLOKw/Dqis1lFJVbBxjqlAPZQsfFGjYQx1Rl8UbDxbqtgY9DgwKnTDBo8a4ltbVvvK40tTqhnjyFfqJtWWipUKp1C48dKvvCY8OGlRTM6zHEoYVKubqgDqo1hUBc861TVEcW7k1NKigW3G1HJjhVbZzJq52ka0hWflVOVXwTnBz3Y1NIX2FtEwbxUPcrhY403OQDnOuPulrmuptJN17EL6p07vkzUaDxzVxoQqtQcPL1aN5eJuXizl4mSrPZzTPqn//aAAgBAwABPwH0W6dyDehOarp3eBwhXTu0KRxTTjigM59y5qzd1J4kdSmYzCcIPhBjwFxKk9ikqSrx3+Xnyl5XvSf/2gAIAQIAAT8B9FLwNqL8MCmv3q+N6lNdKvjfoVhgnDAQnkGLu/H4LnLJvWqZg9aIiciE0yB4XCc1gg0BQMcM81dGGCgFXBu0/wC/FfNb9KFHghQo07gV30n/2gAIAQEABj8C9UXCMYkbim8mI1sdqEtlxds3aIBOJ2eREzjuWTlk5XDMiDIhZ/3tUaxL4CLSDgsnLVKdjGGYQ5ZM5nwY57gsiFIxGjrCYRAywTTdxgHasHFo29icM+namaxIwT/7sWHLjpzXuMoN53cE39QlNPanXucog0yhdy0ne7uTPZCwbIIGKm7rTlOxNBbhnPUn/wB2Jjhtz60RtGfSj0YBC8DDeiE5vvUH+WS1X3uhO3TpF16PcgNwWOewrYt7t6Lr0T0K51Y9SkO2blevSi3eg69l0KRq9yxd8FAy0jdbMGOVHyV44ZjfkYWDI9o/SVrtgbxiPqoaJwnOE6W4tjbzlyB/L7Ik4XZn3LkD+X2RBEERtnNajb3TkFiwH2T9YUjTf7Z7gmbr9Ttxj5reN166rrnPa07Hd1/cv2DvKqddLvTW86fgrn+WPhyvgi3mx8U8c64O37JrW4SQ3qH/ABNgmHSMTOOaH6xj1j7ab/bPcEQcZc6AM+VsXKGH5X4O7R9EZHQdoX7O5xVTrpd6adrQXdhClE85t7tJ+SceaaZ7012xrserJMjGJJ7ITBuBPy03Q2ZM5wp5L5d0iCZgrWpB3vHzUQGDtP0ClrZF0DOMk8xBN2BPNQJbAAO2c4XFxhlen8vV1KWiRdAzjJPLhF6MM8lA129OBH1WrTDesj5LeTmfJxIlcoZT7kBv7lMqNo8uelsI4jEQtkav+soSdgy6BCk7vVT/2gAIAQEBAT8h/wCRhC3NdyPU2oSWDtQt76EEhAIg3Of35TSiQSu9P4YUVdENutf5h80sGRDBr1qeIwALJspWye2DWkJCEkAHdp2FygI33r/MPmg5kjJhOlIEXFbhyoqtiwBM5YZz4WBzzD+qa34qB9mjSiYTyxfALpnlR/wCzmUp7kics71YMAs/YpakpZerR6fNKbN2OJnnXcHsrSFnBL8OdFGMHQad6gHKl+m8UKnYev8Aj1re2I5izSSBLKTEk/FQZbwX737lGEdZF54z5u09ivoNqMXncEWdSkSZ0MDqYnhiaiSh9xiXSa7g9lHMYJde4n5oaANzBwvtUaLmFwz3mtlIaWmYKyvL7P4qV8MWNjwn5Io4Rk7J52pAOFnUv5jnEotBwRV35iJ5VBLB0P1SDAs3mO0TRqrJnZwKKS7EHSKkJwA1G6pdrKIh9tQNpk2QLutApgJUEN2QvJzpBRTmL+iiN1OAPy0GOB5oSIvHIA4lvQTw1Ddgby4tRjg5L6CHrT65KLnYBxirfbc2KFQ0dqSQCLBMZQXgj08DyBYBzDnegBLxN7712BdQdhSmlhZbd53XoVow5r6CXrUiJO4mRNHz51DUftf0KBJJlynO8mbaKVrsAs8hbtpnjRFCwR+ECqM2NqMPQn9tyUZ8hO3BTQmFz7QZ91bUYjiLHRRFInBLBBJl0ZpLTDd2PcdDz51CEatWKLojfSiSDuVi7DzyqNCJSmSNnUphlm0ncCPoeALQMG63uSVIGmJnhHxRvckvReyrNOpygPoM0uCCtkMu9CrJYTMEh6rVoa31Iet/TzmBS5Y5BpHCjiYCcRaCTlWsI1E9olQ9psNnYg6l6RBWbgkuzvRSBLuM5zGtEWJ7kuDhWjPdXBM4VEa0HBJdnehAiC7AIzbWaLFNAULabg5w0haT1gemfarlXPTX4DQ/jkAoTE3jNfKPq5UygywbRZa8rdaQAMKAzvj10pChGCTUnH86NiEvWo34Wr8icEsseqHCorShqkWAva1kLVLhEBO4LPRpAg2Fp4Z5RB/yn//aAAwDAQECAQMBAAAQ888888888o888888888o81gR61W58o8eb8IXoY1o8o0Konf6+o8p6FuDA78o8v8AjjDDXfKPPPL77/PPKPPPPPPPPPKMMMMMMMMMIP/aAAgBAwEBPxD+qNcTSyCqGLGKG1VF4xVlnqRQ1xeRLJtDapHc5pjk/l+q0uTERyrh/wCKvOq02osGXSKkCZjXxa4YokZw71bGsF+Cs182aAkGzmo/INfH72rPT3rb7pXx5B8qfOMVKpY/s//aAAgBAgEBPxD+qhCBopIW96abqTtCoRJcq9x0Z9aQYQPkC6LzmoLUxX3J+prW0fD2nSlypTCI4eIWCaZERImOFX88APwlMBS5ipaBHi5OvjMUx4Hz5Enxrb/whJ8CP9n/2gAIAQEBAT8Q/wCRFixLl2TU7inj5NAw5c6A1AZHefCPKJBZQmcbv4UWgqA6JmRv4fzDJzjRWVaeCgagN6U7HVPwc9X1Cju+y3aVhYJFwWSd6NlrspPJGVur9cUbjR82L6RJnNLC7GrF7mPgzNUmKzu4OpqNF7gdx7UMUZRI/dvK850jAWTkbVbL4kuFcy5qXc22UlFmaN5Q3o3Kzt1WqxdXemSi50HZ4QWxOF0iTK4TNFCfrQZemKn5+SHftVi/5eSPWhuw+zNSetJKFcuAToMY4VH2AtexFoxZsihLO4ur50n2u2jzqhDpAOuYrFx1gjLqSKfpI9HHCbW8IMn2/VgTHB9lXCqwdwmvRTSW1rp2o3qGNRWI29CKglfX5VSIHBUrvcHgGrCyshOJxHQqYyHyshOz18z5cTABvJKh2CRWWETFCWzRutzbVan5rnEDoIEliCAbO27rTdVHQIGU8KNNCECSMQxp3q4DDAL4c6r1Ko0WIRdLu1l9bwnXmN6Ff5TABAlL5B7KPPjo1ygxn1fYrYb3KrlXKur5pKbuUUGw5qWHnllIQBgWEnarlp25/aTS6prc3PWhN6FO8jAkM9JNw70s5nwJyjqmcpsTa5wSiawhYhdc1UYy5EkBS/B2qCAaBjZCKTWY4032qKeg9KJGyWBC4ORueZ8LP+KfhepVsct2H2lQEXJo1H6AnBahAgA2DwUZEo/RVHmNuVAQqCJrM18yOYDvWIbVkTZxwUdTUWsHMZQeM1hsg7lswmDQ1MrCRwTmWR5h8LPOiXxcOZjxUdYS9aU5FqlwlhDAMdth/NOc0/bDgeCPuDdSPqTRazH40poz+O8/oTX763Kigt1OHchFeFWkqKyojkeTT9oRO9nzmgB0IOJPFAl+oCZC8IcV0xnvTuCnhYx5BOohoURDBjtpmS1MuWE13No2VhpCc20FYkM8bjoDezWIkA8drEUGtPT5AcCjYFtz0ME06hoh1o6giX1c1RmVQ0LLAGBW0Ocv8d9YpTYFMZiBZq7HQn3FEIZwhJhraUo10FbnDgLj7L5xVlyCRgTI0kx/P1+W+CNkOrS3KjcztjiWysWfBLS3cxGJp1ZyMk6kdTSprcXI6pMewf8AKf/Z" alt="Torasísimo">
+    <div class="logo-text"><strong>Torasísimo</strong><span>Asociación</span></div>
+  </div>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="quienes-somos.html">Quiénes Somos</a>
+    <a href="proyectos.html">Proyectos</a>
+    <a href="galeria.html">Galería</a>
+    <a href="prensa.html" class="active">Prensa</a>
+  </nav>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="nav-mobile" id="nav-mobile">
+  <a href="index.html">Inicio</a>
+  <a href="quienes-somos.html">Quiénes Somos</a>
+  <a href="proyectos.html">Proyectos</a>
+  <a href="galeria.html">Galería</a>
+  <a href="prensa.html" class="active">Prensa</a>
+</div>
+
+<section class="titulo-pagina">
+  <span class="label">Torasísimo · Asociación</span>
+  <h1>En los<br>medios</h1>
+  <span class="linea"></span>
+</section>
+
+<div class="prensa-intro">
+  <p>Torasísimo ha sido recogida en prensa escrita, radio, televisión y medios digitales. Aquí recopilamos todas las apariciones del colectivo desde su creación.</p>
+</div>
+
+<section class="noticias-section">
+  <div class="noticias-grid">
+    
+    <div class="noticia-card">
+      <div class="noticia-header">
+        <span class="noticia-tipo" style="background:#1abc9c">Prensa escrita</span>
+        <span class="noticia-fecha">Febrero 2023</span>
+      </div>
+      <h3 class="noticia-medio">Levante EMV</h3>
+      <p class="noticia-desc">Torás, el pueblo de los influencers. Reportaje sobre el grupo de jóvenes creadoras de contenido que dan vida al pueblo.</p>
+      <a href="https://www.levante-emv.com/los-serranos-rincon-de-ademuz/2023/02/27/pueblo-influencers-creadores-contenido-vienen-83696110.amp.html" target="_blank" class="noticia-link">Ver publicación <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="12" height="12"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+    </div>
+    <div class="noticia-card">
+      <div class="noticia-header">
+        <span class="noticia-tipo" style="background:#1abc9c">Prensa escrita</span>
+        <span class="noticia-fecha">Febrero 2023</span>
+      </div>
+      <h3 class="noticia-medio">El Periódico de Aquí</h3>
+      <p class="noticia-desc">El pueblo de los influencers de Castellón. Reportaje sobre Torás y el colectivo Torasísimo.</p>
+      <a href="https://amp.epe.es/es/sociedad/20230228/pueblo-influencers-castellon-toras-83804085" target="_blank" class="noticia-link">Ver publicación <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="12" height="12"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+    </div>
+    <div class="noticia-card">
+      <div class="noticia-header">
+        <span class="noticia-tipo" style="background:#9b59b6">Entrevista</span>
+        <span class="noticia-fecha">8 de marzo 2024</span>
+      </div>
+      <h3 class="noticia-medio">CDR Palancia Mijares</h3>
+      <p class="noticia-desc">Entrevista al colectivo de mujeres Torasísimo con motivo del Día Internacional de la Mujer.</p>
+      <a href="https://www.cdrpalanciamijares.es/entrevista-colectivo-de-mujeres-torasisimo" target="_blank" class="noticia-link">Ver publicación <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="12" height="12"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+    </div>
+    <div class="noticia-card">
+      <div class="noticia-header">
+        <span class="noticia-tipo" style="background:#1abc9c">Prensa escrita</span>
+        <span class="noticia-fecha">25 noviembre 2024</span>
+      </div>
+      <h3 class="noticia-medio">Periódico Palancia-Mijares</h3>
+      <p class="noticia-desc">Torasísimo, ganadoras del concurso de fotografía en Instagram del Grupo de Acción Local Palancia-Mijares.</p>
+      <a href="https://castellon.elperiodicodeaqui.com/epda-noticias/el-grupo-de-accion-local-palancia-mijares-premia-las-mejores-fotografias-en-su-primer-concurso-de-imagenes-en-instagram/352408" target="_blank" class="noticia-link">Ver publicación <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="12" height="12"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+    </div>
+    <div class="noticia-card">
+      <div class="noticia-header">
+        <span class="noticia-tipo" style="background:#9b59b6">Entrevista</span>
+        <span class="noticia-fecha">Diciembre 2024</span>
+      </div>
+      <h3 class="noticia-medio">Mancomunidad Alto Palancia</h3>
+      <p class="noticia-desc">Entrevista a Sara y Natalia en la Feria de Mujeres Creadoras de Geldo. Mujeres creadoras fomenta la iniciativa ciudadana contra la desigualdad.</p>
+      <a href="https://mancomunidaddelaltopalancia.es/news/mujeres-creadoras-fomenta-la-iniciativa-ciudadana-contra-la-desigualdad/" target="_blank" class="noticia-link">Ver publicación <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="12" height="12"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+    </div>
+    <div class="noticia-card">
+      <div class="noticia-header">
+        <span class="noticia-tipo" style="background:#e67e22">Radio</span>
+        <span class="noticia-fecha">Diciembre 2024</span>
+      </div>
+      <h3 class="noticia-medio">Suena Palancia (Radio)</h3>
+      <p class="noticia-desc">Programa de radio con grabación de la Feria de Mujeres Creadoras. Entrevista disponible en el programa de diciembre.</p>
+      <a href="https://mancomunidaddelaltopalancia.es/suenapalancia/" target="_blank" class="noticia-link">Ver publicación <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="12" height="12"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+    </div>
+    <div class="noticia-card">
+      <div class="noticia-header">
+        <span class="noticia-tipo" style="background:#e74c3c">Televisión</span>
+        
+      </div>
+      <h3 class="noticia-medio">Segorbe TV4</h3>
+      <p class="noticia-desc">Entrevista a Andrea y Laura como Duolaguner, dando a conocer la asociación Torasísimo y sus proyectos.</p>
+      <a href="https://youtu.be/v6EkaJg-9tY?si=dZHQ-IPfiVKXc5y6" target="_blank" class="noticia-link">Ver publicación <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="12" height="12"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+    </div>
+    <div class="noticia-card">
+      <div class="noticia-header">
+        <span class="noticia-tipo" style="background:#1abc9c">Prensa escrita</span>
+        
+      </div>
+      <h3 class="noticia-medio">Culturama</h3>
+      <p class="noticia-desc">VIII edición del Premi Culturama. Reconocimiento a proyectos de responsabilidad social empresarial.</p>
+      <a href="https://culturama.es/responsabilitat-social-empresarial/la-viii-edicio-del-premi-culturama-recau-en-el-projecte-xalar-a-lalt-maestrat/" target="_blank" class="noticia-link">Ver publicación <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="12" height="12"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+    </div>
+    <div class="noticia-card">
+      <div class="noticia-header">
+        <span class="noticia-tipo" style="background:#1abc9c">Prensa escrita</span>
+        <span class="noticia-fecha">Mayo 2025</span>
+      </div>
+      <h3 class="noticia-medio">Apunt Media</h3>
+      <p class="noticia-desc">Presentación al concurso de Amazon. Seis pequeños municipios valencianos compiten por albergar una gran fiesta de una multinacional tecnológica.</p>
+      <a href="https://www.apuntmedia.es/noticies/societat/sis-xicotets-municipis-valencians-batalla-allotjar-gran-festa-d-una-multinacional-tecnologica_1_1785715.html" target="_blank" class="noticia-link">Ver publicación <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="12" height="12"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+    </div>
+    <div class="noticia-card">
+      <div class="noticia-header">
+        <span class="noticia-tipo" style="background:#3498db">Documento</span>
+        
+      </div>
+      <h3 class="noticia-medio">Mancomunidad Alto Palancia</h3>
+      <p class="noticia-desc">Documento de prácticas en el que se nombra a Torasísimo (pág. 28). Enviado directamente por la Mancomunidad.</p>
+      <span class="noticia-sin-enlace">Sin enlace externo</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col footer-brand">
+      <img src="data:image/jpeg;base64,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" alt="Torasísimo">
+      <div class="footer-logo-text"><strong>Torasísimo</strong><span>Asociación</span></div>
+      <p class="footer-tagline">Trabajamos para construir una sociedad más justa, inclusiva y solidaria.</p>
+    </div>
+    <div class="footer-col footer-links">
+      <p class="footer-heading">Páginas</p>
+      
+      <a href="index.html">Inicio</a>
+      <a href="quienes-somos.html">Quiénes Somos</a>
+      <a href="valores.html">Valores</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="galeria.html">Galería</a>
+      <a href="prensa.html">Prensa</a>
+    </div>
+    <div class="footer-col footer-social">
+      <p class="footer-heading">Síguenos</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/torasisimo?igsh=MWFncDE1endzaTNhOA==" target="_blank" class="social-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+        <a href="https://www.facebook.com/p/Torasisimo-100086201883035/" target="_blank" class="social-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          Facebook
+        </a>
+        <a href="mailto:torasisimo@gmail.com" class="social-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+          torasisimo@gmail.com
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Torasísimo Asociación — Todos los derechos reservados</p>
+    <p><a href="#">Aviso legal</a> · <a href="#">Política de privacidad</a></p>
+  </div>
+</footer>
+
+<script>
+function toggleMenu(){
+  const btn = document.querySelector('.hamburger');
+  const nav = document.getElementById('nav-mobile');
+  btn.classList.toggle('open');
+  nav.classList.toggle('open');
+  document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+}
+document.querySelectorAll('.nav-mobile a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.querySelector('.hamburger').classList.remove('open');
+    document.getElementById('nav-mobile').classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});
+</script>
+</body>
+</html>
