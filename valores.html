@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valores — Torasísimo</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+<style>
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+:root{
+  --black: #111111;
+  --white: #ffffff;
+  --grey-light: #f1f1f1;
+  --grey-mid: #e5e5e5;
+  --accent: #1abc9c;
+  --text-muted: #555;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: var(--black);
+  overflow-x: hidden;
+}
+
+/* HEADER */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 48px;
+  border-bottom: 1px solid var(--grey-mid);
+  position: sticky;
+  top: 0;
+  background: var(--white);
+  z-index: 100;
+}
+.logo{ display:flex; align-items:center; gap:12px; }
+.logo img{ height:48px; width:auto; }
+.logo-text{ display:flex; flex-direction:column; line-height:1.2; }
+.logo-text strong{
+  font-family:'Oswald',sans-serif; font-size:15px; font-weight:600;
+  letter-spacing:0.08em; text-transform:uppercase;
+}
+.logo-text span{
+  font-family:'Lato',sans-serif; font-size:10px; font-weight:300;
+  letter-spacing:0.2em; text-transform:uppercase; color:var(--text-muted);
+}
+nav{ display:flex; align-items:center; gap:36px; }
+nav a{
+  text-decoration:none; color:var(--black); font-size:13px;
+  letter-spacing:0.08em; text-transform:uppercase; font-weight:400;
+  position:relative; padding-bottom:2px; transition:color 0.2s;
+}
+nav a::after{
+  content:""; position:absolute; bottom:0; left:0;
+  width:0; height:1px; background:var(--accent); transition:width 0.25s ease;
+}
+nav a:hover::after{ width:100%; }
+nav a.active{ border-bottom:1px solid var(--accent); }
+
+/* INTRO */
+.valores-intro{
+  display: flex;
+  align-items: flex-start;
+  padding: 72px 48px 56px;
+  gap: 60px;
+  border-bottom: 1px solid var(--grey-mid);
+  animation: fadeUp 0.8s ease both;
+}
+
+@keyframes fadeUp{
+  from{ opacity:0; transform:translateY(14px); }
+  to{ opacity:1; transform:translateY(0); }
+}
+
+.valores-titulo{
+  width: 38%;
+}
+
+.valores-titulo h1{
+  font-family: 'Oswald', sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 0.9;
+}
+
+.valores-texto{
+  width: 62%;
+  padding-top: 8px;
+  font-size: 19px;
+  line-height: 1.75;
+  max-width: 560px;
+  color: #333;
+}
+
+/* GRID */
+.valores-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--grey-mid);
+  border-top: 1px solid var(--grey-mid);
+  border-bottom: 1px solid var(--grey-mid);
+}
+
+.valor{
+  background: var(--white);
+  padding: 48px 40px;
+  transition: background 0.2s;
+  position: relative;
+}
+
+.valor:hover{
+  background: var(--grey-light);
+}
+
+.valor-num{
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  margin-bottom: 18px;
+}
+
+.valor h3{
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  position: relative;
+}
+
+.valor h3::after{
+  content: "";
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: var(--accent);
+  margin-top: 10px;
+}
+
+.valor p{
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-top: 14px;
+}
+
+/* FOOTER */
+footer{
+  border-top: 1px solid var(--grey-mid);
+  padding: 32px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer img{ height:36px; width:auto; opacity:0.6; }
+footer p{ font-size:12px; color:var(--text-muted); letter-spacing:0.05em; }
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .valores-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media(max-width:900px){
+  header{ padding:16px 24px; }
+  nav{ gap:20px; }
+  .valores-intro{ flex-direction:column; padding:48px 24px 40px; gap:24px; }
+  .valores-titulo, .valores-texto{ width:100%; }
+  .valores-titulo h1{ font-size:52px; }
+  .valores-grid{ grid-template-columns: repeat(2,1fr); }
+  footer{ flex-direction:column; gap:16px; text-align:center; }
+}
+@media(max-width:520px){
+  .valores-grid{ grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="data:image/jpeg;base64,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" alt="Torasísimo">
+    <div class="logo-text">
+      <strong>Torasísimo</strong>
+      <span>Asociación</span>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="quienes-somos.html">Quiénes Somos</a>
+    <a href="#">Cómo trabajamos</a>
+    <a href="valores.html" class="active">Valores</a>
+    <a href="proyectos.html">Proyectos</a>
+  </nav>
+</header>
+
+<section class="valores-intro">
+  <div class="valores-titulo">
+    <h1>VALORES</h1>
+  </div>
+  <div class="valores-texto">
+    <p>Nuestra asociación trabaja promoviendo valores fundamentales que contribuyen a construir una sociedad más justa, inclusiva y solidaria. Estos principios guían nuestras acciones y proyectos.</p>
+  </div>
+</section>
+
+<section class="valores-grid">
+
+  <div class="valor">
+    <span class="valor-num">01</span>
+    <h3>Solidaridad</h3>
+    <p>Promovemos el apoyo mutuo entre personas y comunidades, fomentando la cooperación y la ayuda a quienes más lo necesitan.</p>
+  </div>
+
+  <div class="valor">
+    <span class="valor-num">02</span>
+    <h3>Justicia social</h3>
+    <p>Trabajamos para reducir desigualdades y garantizar que todas las personas tengan acceso a oportunidades dignas.</p>
+  </div>
+
+  <div class="valor">
+    <span class="valor-num">03</span>
+    <h3>Igualdad</h3>
+    <p>Defendemos la igualdad de derechos sin importar origen, género, cultura o situación económica.</p>
+  </div>
+
+  <div class="valor">
+    <span class="valor-num">04</span>
+    <h3>Transparencia</h3>
+    <p>Actuamos con responsabilidad y claridad en nuestras decisiones y en el uso de los recursos.</p>
+  </div>
+
+  <div class="valor">
+    <span class="valor-num">05</span>
+    <h3>Participación</h3>
+    <p>Fomentamos la implicación activa de las personas en la mejora de su comunidad.</p>
+  </div>
+
+  <div class="valor">
+    <span class="valor-num">06</span>
+    <h3>Innovación social</h3>
+    <p>Buscamos nuevas ideas y soluciones creativas para afrontar los retos actuales.</p>
+  </div>
+
+  <div class="valor">
+    <span class="valor-num">07</span>
+    <h3>Sostenibilidad</h3>
+    <p>Promovemos acciones respetuosas con el medio ambiente y el desarrollo responsable.</p>
+  </div>
+
+  <div class="valor">
+    <span class="valor-num">08</span>
+    <h3>Educación</h3>
+    <p>Impulsamos el aprendizaje como herramienta para el cambio social y el progreso.</p>
+  </div>
+
+</section>
+
+<footer>
+  <img src="data:image/jpeg;base64,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" alt="Torasísimo">
+  <p>© 2025 Torasísimo Asociación — Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
