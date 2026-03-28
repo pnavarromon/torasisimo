@@ -253,6 +253,7 @@ nav a:hover::after{ width: 100%; }
   .imagen, .texto{ width: 100%; }
   .imagen{ height: 55vw; }
   .texto{ padding: 48px 32px; }
+  .texto::before{ top: 48px; left: 32px; }
   .texto h1{ font-size: 30px; }
 
   .mision-strip{ flex-direction: column; gap: 24px; padding: 48px 24px; }
@@ -388,18 +389,18 @@ footer{
     <a href="prensa.html" >Prensa</a>
   </nav>
 
-  <button class="hamburger" id="hamburger-btn" aria-label="Menú">
+  <button class="hamburger" id="hamburger-btn" aria-label="Menú" onclick="var n=document.getElementById('nav-mobile');var b=document.getElementById('hamburger-btn');n.classList.toggle('open');b.classList.toggle('open');document.body.style.overflow=n.classList.contains('open')?'hidden':'';">
     <span></span>
     <span></span>
     <span></span>
   </button>
 </header>
 <div class="nav-mobile" id="nav-mobile">
-  <a href="index.html" class="active">Inicio</a>
-  <a href="quienes-somos.html" >Quiénes Somos</a>
-  <a href="proyectos.html" >Proyectos</a>
-  <a href="galeria.html" >Galería</a>
-  <a href="prensa.html" >Prensa</a>
+  <a href="index.html" class="active" onclick="document.getElementById('nav-mobile').classList.remove('open');document.getElementById('hamburger-btn').classList.remove('open');document.body.style.overflow='';">Inicio</a>
+  <a href="quienes-somos.html"  onclick="document.getElementById('nav-mobile').classList.remove('open');document.getElementById('hamburger-btn').classList.remove('open');document.body.style.overflow='';">Quiénes Somos</a>
+  <a href="proyectos.html"  onclick="document.getElementById('nav-mobile').classList.remove('open');document.getElementById('hamburger-btn').classList.remove('open');document.body.style.overflow='';">Proyectos</a>
+  <a href="galeria.html"  onclick="document.getElementById('nav-mobile').classList.remove('open');document.getElementById('hamburger-btn').classList.remove('open');document.body.style.overflow='';">Galería</a>
+  <a href="prensa.html"  onclick="document.getElementById('nav-mobile').classList.remove('open');document.getElementById('hamburger-btn').classList.remove('open');document.body.style.overflow='';">Prensa</a>
 </div>
 
 <section class="hero">
