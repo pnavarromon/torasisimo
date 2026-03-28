@@ -415,7 +415,7 @@ nav a.active{ border-bottom: 1px solid var(--accent); }
 }
 
 .nav-mobile{
-  display: none;
+  display: flex;
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100vh;
@@ -428,11 +428,13 @@ nav a.active{ border-bottom: 1px solid var(--accent); }
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
+  visibility: hidden;
 }
 
 .nav-mobile.open{
   opacity: 1;
   pointer-events: all;
+  visibility: visible;
 }
 
 .nav-mobile a{
@@ -454,7 +456,6 @@ nav a.active{ border-bottom: 1px solid var(--accent); }
 @media(max-width: 768px){
   nav{ display: none; }
   .hamburger{ display: flex; }
-  .nav-mobile{ display: flex; }
 }
 
 /* FOOTER */
@@ -634,7 +635,7 @@ footer{
     <a href="prensa.html" >Prensa</a>
   </nav>
 
-  <button class="hamburger" onclick="toggleMenu()" aria-label="Menú">
+  <button class="hamburger" id="hamburger-btn" aria-label="Menú">
     <span></span>
     <span></span>
     <span></span>
@@ -852,7 +853,6 @@ footer{
 <footer>
   <div class="footer-inner">
     <div class="footer-col footer-brand">
-      <img src="data:image/jpeg;base64,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" alt="Torasísimo">
       <div class="footer-logo-text">
         <strong>Torasísimo</strong>
         <span>Asociación</span>
@@ -885,13 +885,9 @@ footer{
       </div>
     </div>
   </div>
-  <div class="footer-bottom">
-    <p>© 2025 Torasísimo Asociación — Todos los derechos reservados</p>
-    <p><a href="#">Aviso legal</a> · <a href="#">Política de privacidad</a></p>
-  </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 function toggleMenu(){
   const btn = document.querySelector('.hamburger');
   const nav = document.getElementById('nav-mobile');
