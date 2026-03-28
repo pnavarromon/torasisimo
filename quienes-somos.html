@@ -847,6 +847,25 @@ footer{
 </div>
 </section>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var btn = document.getElementById('hamburger-btn');
+  var nav = document.getElementById('nav-mobile');
+  if (!btn || !nav) return;
+  btn.addEventListener('click', function() {
+    btn.classList.toggle('open');
+    nav.classList.toggle('open');
+    document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+  });
+  nav.querySelectorAll('a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      btn.classList.remove('open');
+      nav.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+});
+</script>
 </body>
 </html>
 
@@ -888,14 +907,23 @@ footer{
 </footer>
 
 <script>
-function toggleMenu(){
-  const btn = document.querySelector('.hamburger');
-  const nav = document.getElementById('nav-mobile');
-  btn.classList.toggle('open');
-  nav.classList.toggle('open');
-  document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
-}
-// Close menu when a link is clicked
-document.querySelectorAll('.nav-mobile a').forEach(a => {
-  a.addEventListener('click', () => {
-    d
+document.addEventListener('DOMContentLoaded', function() {
+  var btn = document.getElementById('hamburger-btn');
+  var nav = document.getElementById('nav-mobile');
+  if (!btn || !nav) return;
+  btn.addEventListener('click', function() {
+    btn.classList.toggle('open');
+    nav.classList.toggle('open');
+    document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+  });
+  nav.querySelectorAll('a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      btn.classList.remove('open');
+      nav.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+});
+</script>
+</body>
+</html>
