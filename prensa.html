@@ -21,10 +21,35 @@ header{ display:flex; justify-content:space-between; align-items:center; padding
 .logo-text{ display:flex; flex-direction:column; line-height:1.2; }
 .logo-text strong{ font-family:'Oswald',sans-serif; font-size:15px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; }
 .logo-text span{ font-family:'Lato',sans-serif; font-size:10px; font-weight:300; letter-spacing:0.2em; text-transform:uppercase; color:var(--text-muted); }
-nav{ display:flex; align-items:center; gap:24px; }
-nav a{ text-decoration:none; color:var(--black); font-size:12px; letter-spacing:0.08em; text-transform:uppercase; font-weight:400; position:relative; padding-bottom:2px; transition:color 0.2s; }
-nav a::after{ content:""; position:absolute; bottom:0; left:0; width:0; height:1px; background:var(--accent); transition:width 0.25s ease; }
-nav a:hover::after{ width:100%; }
+nav{
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--black);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.2s;
+}
+
+nav a::after{
+  content: "";
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0; height: 1px;
+  background: var(--accent);
+  transition: width 0.25s ease;
+}
+
+nav a:hover::after{ width: 100%; }
 nav a.active{ border-bottom:1px solid var(--accent); }
 
 /* HAMBURGER */
@@ -47,7 +72,7 @@ nav a.active{ border-bottom:1px solid var(--accent); }
 }
 @keyframes fadeUp{ from{ opacity:0; transform:translateY(14px); } to{ opacity:1; transform:translateY(0); } }
 .titulo-pagina .label{ display:block; font-size:11px; font-weight:400; letter-spacing:0.25em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
-.titulo-pagina h1{ font-family:'Oswald',sans-serif; font-size:clamp(64px,10vw,140px); font-weight:700; line-height:0.88; letter-spacing:-0.02em; text-transform:uppercase; }
+.titulo-pagina h1{ font-family:'Oswald',sans-serif; font-size:58px; font-weight:700; line-height:0.88; letter-spacing:-0.02em; text-transform:uppercase; }
 .titulo-pagina .linea{ display:block; width:100%; height:1px; background:var(--black); margin-top:28px; transform:scaleX(0); transform-origin:left; animation:lineIn 0.9s 0.3s ease forwards; }
 @keyframes lineIn{ to{ transform:scaleX(1); } }
 
